@@ -1,0 +1,7 @@
+services:
+  php:
+    build:
+      context: ./code
+    volumes:
+      - ./code:/var/www/html
+      - ./code/tests:/var/www/html/tests
